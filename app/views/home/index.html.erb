@@ -1,7 +1,9 @@
 <h1>HOME</h1>
 
 <%# home_controllerで定義した変数を引っ張ってこれる %>
-<h2><%= @title %></h2>
+<h2><%= @article.title %></h2>
+<h2><%= @article.content %></h2>
+
 
 <%# railsでは以下の書き方は推奨されない %>
 <%# <a href="/about">about</a> %>
