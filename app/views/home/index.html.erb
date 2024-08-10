@@ -1,0 +1,10 @@
+<h1>HOME</h1>
+
+<%# home_controllerで定義した変数を引っ張ってこれる %>
+<h2><%= @title %></h2>
+
+<%# railsでは以下の書き方は推奨されない %>
+<%# <a href="/about">about</a> %>
+
+<%# link_toはaタグを生み出す・about_pathはurlを生み出すメソッド %>
+<%= link_to 'About', about_path %>
