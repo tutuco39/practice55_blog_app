@@ -1,11 +1,12 @@
 class ArticlesController < ApplicationController
 
     def index
-        # 以下 render〜 の記載は省略できる
-        # render 'home/index'
+        # Articleのすべての記事を変数にいれる
+        @articles = Article.all
+    end
 
-        # Articleの一番最初の記事を変数にいれる
-        @article = Article.first
+    def show
+        @article = Article.find(params[:id])
     end
 
 end
