@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   root to: 'articles#index'
 
   # いろんなurlをrailsが作ってくれる
-  resources :articles, only: [:show, :new, :create]
+  resources :articles,
+  only: [:show, :new, :create, :edit, :update]
 
 
 
