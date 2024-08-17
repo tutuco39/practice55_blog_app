@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   # いろんなurlをrailsが作ってくれる
   resources :articles,
-  only: [:show, :new, :create, :edit, :update]
+  only: [:show, :new, :create, :edit, :update, :destroy]
 
 
 
