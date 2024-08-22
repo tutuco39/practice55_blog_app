@@ -5,6 +5,4 @@ Rails.application.routes.draw do
 
   # いろんなurlをrailsが作ってくれる
   resources :articles
-
-
 end
