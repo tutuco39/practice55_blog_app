@@ -1,0 +1,16 @@
+{
+  "name": "blog app",
+  "description": "This is blogapp",
+  "keyword": [],
+  "website": "",
+  "repository": "https://github.com/tutuco39/practice55_blog_app",
+  "env": {},
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }, {
+    "url": "heroku/ruby"
+  }]
+}
