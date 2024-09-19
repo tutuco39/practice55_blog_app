@@ -5,6 +5,7 @@
   "website": "",
   "repository": "https://github.com/tutuco39/practice55_blog_app",
   "env": {},
+  "stack": "heroku-20",
   "addons": [
     "heroku-postgresql:hobby-dev"
   ],
