@@ -9,7 +9,7 @@
   "addons": [
     "heroku-postgresql:hobby-dev"
   ],
-  "buildpacks": [{
+  "heroku buildpacks": [{
     "url": "heroku/nodejs"
   }, {
     "url": "heroku/ruby"
