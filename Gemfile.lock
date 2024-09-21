@@ -121,6 +121,7 @@ GEM
     faker (3.4.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     globalid (1.1.0)
       activesupport (>= 5.0)
     haml (6.3.0)
@@ -172,6 +173,8 @@ GEM
       net-protocol
     nio4r (2.7.3)
     nokogiri (1.15.6-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.6-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.26.3)
@@ -317,6 +320,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-23
+  x86_64-linux
 
 DEPENDENCIES
   annotate
