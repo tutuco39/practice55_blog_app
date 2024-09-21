@@ -8,5 +8,8 @@
     "@rails/webpacker": "^5.4.3",
     "turbolinks": "^5.2.0"
   },
+  "scripts": {
+    "start": "react-scripts start --openssl-legacy-provider"
+    },
   "version": "0.1.0"
 }
