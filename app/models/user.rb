@@ -27,6 +27,12 @@ class User < ApplicationRecord
   has_many :favorite_articles, through: :likes, source: :article
   has_one :profile, dependent: :destroy
 
+  has_many :following_relationships, foreign_key: 'follower_id', class_name: 'Relationship', dependent: :destroy
+  has_many :followings, through: :following_relationships, source: :following
+
+  has_many :follower_relationships, foreign_key: 'following_id', class_name: 'Relationship', dependent: :destroy
+  has_many :followers, through: :follower_relationships, source: :follower
+
   delegate :birthday, :age, :gender, to: :profile, allow_nil: true
 
   def has_written?(article)
@@ -43,6 +49,15 @@ class User < ApplicationRecord
 
   def prepare_profile
     profile || build_profile
+  end
+
+  def follow!(user)
+    following_relationships.create!(following_id: user.id)
+  end
+
+  def unfollow!(user)
+    relation = following_relationships.find_by!(following_id: user_id)
+    relation.destroy!
   end
 
   def avatar_image
