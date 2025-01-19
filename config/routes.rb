@@ -9,12 +9,13 @@ Rails.application.routes.draw do
   root to: 'articles#index'
 
   resources :articles
+  
+  resources :accounts, only: [:show] do
+    resources :follows, only: [:create]
+    resources :unfollows, only: [:create]
+  end
 
   scope module: :apps do
-    resources :accounts, only: [:show] do
-      resources :follows, only: [:create]
-      resources :unfollows, only: [:create]
-    end
     resources :favorites, only: [:index]
     resource :profile, only: [:show, :edit, :update]
     resource :timeline, only: [:show]
