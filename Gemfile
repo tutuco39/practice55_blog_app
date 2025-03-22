@@ -45,6 +45,8 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'rubocop-rails'
   gem 'dotenv-rails'
+  gem 'rspec-rails', '4.0.1'
+  gem 'factory_bot_rails', '5.1.1'
 end
 
 group :development do
