@@ -13,7 +13,8 @@ module Practice55BlogApp
 
     if Rails.env.development? || Rails.env.test?
       Bundler.require(*Rails.groups)
-      Dotenv::Railtie.load
+      Dotenv::Rails
+      # Dotenv::Railtie.load
     end
 
     # Settings in config/environments/* take precedence over those specified here.

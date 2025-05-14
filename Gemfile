@@ -14,8 +14,10 @@ gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '4.2.2'
 gem 'importmap-rails'
+gem 'stimulus-rails'
+gem 'turbo-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -46,8 +48,8 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'rubocop-rails'
   gem 'dotenv-rails'
-  gem 'rspec-rails', '4.0.1'
-  gem 'factory_bot_rails', '5.1.1'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -57,9 +59,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'erb2haml'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'letter_opener', '1.7.0'
-  gem 'letter_opener_web', '~> 1.0'
+  gem 'spring-watcher-listen'
+  gem 'letter_opener'
+  gem 'letter_opener_web'
 end
 
 group :test do
