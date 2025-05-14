@@ -33,9 +33,11 @@ gem 'devise'
 gem 'faker'
 gem 'hamlit'
 gem 'aws-sdk-s3', require: false
-gem "ffi", "< 1.17.0"
+gem 'ffi', '< 1.17.0'
 gem 'sidekiq', '6.0.5'
 gem 'psych', '3.3.2'
+gem 'rails_12factor'
+gem 'net-smtp', '~> 0.3'
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
