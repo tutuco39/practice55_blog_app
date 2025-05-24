@@ -12,7 +12,6 @@ gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '4.2.2'
 gem 'importmap-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
@@ -24,6 +23,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'redis', '4.1.3'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'webpacker', '~> 4.0', '>= 4.0.7'
+gem 'psych', '~> 3.1'
 gem 'annotate'
 gem 'active_decorator'
 gem 'active_model_serializers'
@@ -35,7 +36,6 @@ gem 'hamlit'
 gem 'aws-sdk-s3', require: false
 gem 'ffi', '< 1.17.0'
 gem 'sidekiq', '6.0.5'
-gem 'psych', '3.3.2'
 gem 'rails_12factor'
 gem 'net-smtp', '~> 0.3'
 

@@ -496,7 +496,7 @@ DEPENDENCIES
   net-smtp (~> 0.3)
   pg (>= 0.18, < 2.0)
   pry-byebug
-  psych (= 3.3.2)
+  psych (~> 3.1)
   puma (~> 4.1)
   rails (= 7.2.2.1)
   rails_12factor
@@ -514,7 +514,7 @@ DEPENDENCIES
   tzinfo-data
   web-console (>= 3.3.0)
   webdrivers
-  webpacker (= 4.2.2)
+  webpacker (~> 4.0, >= 4.0.7)
 
 RUBY VERSION
    ruby 3.3.2p78
