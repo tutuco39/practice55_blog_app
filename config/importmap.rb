@@ -6,3 +6,5 @@ pin "@hotwired/turbo-rails", to: "@hotwired--turbo-rails.js" # @2.1.0
 pin "@hotwired/stimulus", to: "@hotwired--stimulus.js" # @3.2.2
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.esm.js"
+pin "jquery" # @3.7.1
+pin "axios", to: "https://cdn.skypack.dev/axios@0.19.2"
