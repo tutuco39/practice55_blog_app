@@ -491,7 +491,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder (~> 2.7)
   letter_opener
-  letter_opener_web
+  letter_opener_web (~> 3.0)
   listen (~> 3.2)
   net-smtp (~> 0.3)
   pg (>= 0.18, < 2.0)
