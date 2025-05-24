@@ -7,7 +7,7 @@
   "repository": "https://github.com/tutuco39/practice55_blog_app",
   "env": {},
   "addons": [
-    "heroku-postgresql:hobby-dev"
+    "heroku-postgresql:essential-0"
   ],
   "heroku buildpacks": [{
     "url": "heroku/nodejs"
