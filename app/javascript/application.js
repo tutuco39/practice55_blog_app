@@ -2,3 +2,12 @@
 
 import "trix"
 import "@rails/actiontext"
+
+require("@rails/ujs").start()
+require("@rails/activestorage").start()
+require("channels")
+
+require("trix")
+require("@rails/actiontext")
+
+
