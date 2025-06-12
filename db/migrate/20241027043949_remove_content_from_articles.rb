@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RemoveContentFromArticles < ActiveRecord::Migration[6.0]
   def change
     remove_column :articles, :content, :text
@@ -11,4 +13,3 @@ class RemoveContentFromArticles < ActiveRecord::Migration[6.0]
     add_column :articles, :content, :text
   end
 end
-

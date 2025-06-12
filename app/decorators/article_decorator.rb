@@ -1,5 +1,6 @@
-module ArticleDecorator
+# frozen_string_literal: true
 
+module ArticleDecorator
   def display_created_at
     I18n.l(created_at, format: :default)
   end
@@ -11,5 +12,4 @@ module ArticleDecorator
   def like_count
     likes.count
   end
-
 end

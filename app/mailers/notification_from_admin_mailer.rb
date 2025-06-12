@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class NotificationFromAdminMailer < ApplicationMailer
   def notify(user, msg)
     @msg = msg

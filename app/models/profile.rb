@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: profiles
@@ -23,14 +25,14 @@ class Profile < ApplicationRecord
 
   def age
     return '不明' unless birthday.present?
+
     years = Time.zone.now.year - birthday.year
     days = Time.zone.now.yday - birthday.yday
 
-    if days < 0
+    if days.negative?
       "#{years - 1}歳"
     else
       "#{years}歳"
     end
   end
-
 end

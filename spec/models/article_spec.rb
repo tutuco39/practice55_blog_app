@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: articles
@@ -31,10 +33,9 @@ RSpec.describe Article, type: :model do
     before do
       article.save
     end
-    
+
     it '記事を保存できない' do
       expect(article.errors.messages[:title][0]).to eq('は2文字以上で入力してください')
     end
   end
 end
-

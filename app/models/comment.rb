@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: comments
@@ -15,5 +17,4 @@
 class Comment < ApplicationRecord
   belongs_to :article
   validates :content, presence: true
-
 end

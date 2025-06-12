@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module TabsHelper
   def add_active_class(path)
     path = path.split('?').first
