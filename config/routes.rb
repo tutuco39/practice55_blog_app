@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
@@ -9,7 +11,7 @@ Rails.application.routes.draw do
   root to: 'articles#index'
 
   resources :articles
-  
+
   resources :accounts, only: [:show] do
     resources :follows, only: [:create]
     resources :unfollows, only: [:create]
@@ -17,16 +19,14 @@ Rails.application.routes.draw do
 
   scope module: :apps do
     resources :favorites, only: [:index]
-    resource :profile, only: [:show, :edit, :update]
+    resource :profile, only: %i[show edit update]
     resource :timeline, only: [:show]
   end
 
-  namespace :api, defaults: {format: :json} do
+  namespace :api, defaults: { format: :json } do
     scope '/articles/:article_id' do
-      resources :comments, only: [:index, :create]
-      resource :like, only: [:show, :create, :destroy]
+      resources :comments, only: %i[index create]
+      resource :like, only: %i[show create destroy]
     end
   end
-
 end
-

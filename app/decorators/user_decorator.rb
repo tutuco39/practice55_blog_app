@@ -2,7 +2,7 @@
 
 module UserDecorator
   def display_name
-    profile&.nickname || self.email.split('@').first
+    profile&.nickname || email.split('@').first
   end
 
   def avatar_image
@@ -12,5 +12,4 @@ module UserDecorator
       'default-avatar.png'
     end
   end
-
 end

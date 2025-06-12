@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -23,21 +25,21 @@ gem 'jbuilder', '~> 2.7'
 gem 'redis', '4.1.3'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'webpacker', '~> 4.0', '>= 4.0.7'
-gem 'psych', '~> 3.1'
-gem 'annotate'
 gem 'active_decorator'
 gem 'active_model_serializers'
+gem 'annotate'
+gem 'aws-sdk-s3', require: false
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'devise'
 gem 'faker'
-gem 'hamlit'
-gem 'aws-sdk-s3', require: false
 gem 'ffi', '< 1.17.0'
-gem 'sidekiq', '6.0.5'
-gem 'rails_12factor'
+gem 'hamlit'
 gem 'net-smtp', '~> 0.3'
+gem 'psych', '~> 3.1'
+gem 'rails_12factor'
+gem 'sidekiq', '6.0.5'
+gem 'webpacker', '~> 4.0', '>= 4.0.7'
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
@@ -48,11 +50,11 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'pry-byebug'
-  gem 'rubocop-rails'
   gem 'dotenv-rails'
-  gem 'rspec-rails'
   gem 'factory_bot_rails'
+  gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'rubocop-rails'
 end
 
 group :development do
@@ -61,10 +63,10 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'erb2haml'
-  gem 'spring'
-  gem 'spring-watcher-listen'
   gem 'letter_opener'
   gem 'letter_opener_web', '~> 3.0'
+  gem 'spring'
+  gem 'spring-watcher-listen'
 end
 
 group :test do

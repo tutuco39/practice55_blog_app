@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: users
@@ -63,9 +65,8 @@ class User < ApplicationRecord
     following_relationships.exists?(following_id: user.id)
   end
 
-
-
   private
+
   def get_user_id(user)
     if user.is_a?(User)
       user.id
@@ -73,5 +74,4 @@ class User < ApplicationRecord
       user
     end
   end
-
 end

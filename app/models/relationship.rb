@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: relationships
@@ -25,6 +27,7 @@ class Relationship < ApplicationRecord
   after_create :send_email
 
   private
+
   def send_email
     RelationshipMailer.new_follower(following, follower).deliver_later
   end

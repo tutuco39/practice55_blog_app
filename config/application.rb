@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'boot'
 
 require 'rails/all'
@@ -11,7 +13,7 @@ module Practice55BlogApp
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    if ['development', 'test'].include? ENV['RAILS_ENV']
+    if %w[development test].include? ENV['RAILS_ENV']
       # Dotenv::Railtie.load
       Dotenv::Rails.load
     end
