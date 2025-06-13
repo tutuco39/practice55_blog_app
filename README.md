@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 現在開発中です。
+2025年6月時点、ruby・railsのアップデートに伴うバグを修正中。
 
-Things you may want to cover:
+## タイトル（例: TaskManager）
+シンプルなブログアプリです。
+ユーザー登録・ログイン後に、記事の作成、編集、削除ができます。
 
-* Ruby version
+## 主な機能
+- ユーザー登録 / ログイン / ログアウト
+- 記事のCRUD（作成・閲覧・編集・削除）
+- 記事のお気に入り登録
+- 記事へのコメント機能
+- 記事への画像投稿機能（アイキャッチ）
+- ユーザー間のフォロー機能
 
-* System dependencies
+## 使用技術
+- フロントエンド:
+- バックエンド:ruby
+- データベース:
 
-* Configuration
+## 開発背景
+このプロジェクトは初学者が学びながら進めているため、時間をかけてじっくり作っています。
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
