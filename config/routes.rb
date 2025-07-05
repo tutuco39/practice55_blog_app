@@ -19,14 +19,14 @@ Rails.application.routes.draw do
 
   scope module: :apps do
     resources :favorites, only: [:index]
-    resource :profile, only: %i[show edit update]
+    resource :profile, only: [:show, :edit, :update]
     resource :timeline, only: [:show]
   end
 
   namespace :api, defaults: { format: :json } do
     scope '/articles/:article_id' do
-      resources :comments, only: %i[index create]
-      resource :like, only: %i[show create destroy]
+      resources :comments, only: [:index, :create]
+      resource :like, only: [:show, :create, :destroy]
     end
   end
 end

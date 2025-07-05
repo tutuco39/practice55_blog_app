@@ -16,7 +16,9 @@
   "version": "0.1.0",
   "devDependencies": {
     "@webpack-cli/serve": "^3.0.1",
-    "webpack-dev-server": "4.11.1"
+    "webpack": "^5",
+    "webpack-cli": "^4",
+    "webpack-dev-server": "^4"
   },
   "resolutions": {
     "chokidar": "2.1.8"
