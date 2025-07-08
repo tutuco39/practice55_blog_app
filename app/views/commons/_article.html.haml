@@ -7,8 +7,12 @@
       .card_title
         = article.title
       .card_heart
-        = image_tag 'heart.svg'
-        %span= article.like_count
+        - if user_signed_in?
+          - if current_user.has_liked?(article)
+            = image_tag 'heart-active.svg'
+          - else
+            = image_tag 'heart.svg'
+          %span= article.like_count
       .card_detail
         = image_tag article.user.avatar_image
         %div
