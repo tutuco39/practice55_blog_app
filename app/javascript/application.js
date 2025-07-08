@@ -8,6 +8,7 @@ import "trix"
 import "@rails/actiontext"
 import ''
 
+
 require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
@@ -23,7 +24,6 @@ import {
 } from 'modules/handle_heart'
 
 const handleHeartDisplay = (hasLiked) => {
-  console.log('aaaaaaaaaaaa')
   if (hasLiked) {
     $('.active-heart').removeClass('hidden')
   } else {

@@ -23,6 +23,12 @@ Rails.application.routes.draw do
     resource :timeline, only: [:show]
   end
 
+  # resources :articles do
+  #   resources :comments, only: [:new, :create]
+
+  #   resource :like, only: [:create, :destroy]
+  # end
+
   namespace :api, defaults: { format: :json } do
     scope '/articles/:article_id' do
       resources :comments, only: [:index, :create]
