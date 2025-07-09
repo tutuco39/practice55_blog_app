@@ -11,6 +11,7 @@
 Faker::Config.locale = 'en'
 
 users = User.all
+articles = Article.all
 
 # 3.times do
 #   User.create!(
@@ -34,11 +35,21 @@ users = User.all
 # )
 
 
-9.times do
-  Article.create!(
-    title: Faker::Lorem.sentence(word_count: 5),
-    content: Faker::Lorem.sentence(word_count: 100),
-    user_id: users.sample.id
+# 9.times do
+#   Article.create!(
+#     title: Faker::Lorem.sentence(word_count: 5),
+#     content: Faker::Lorem.sentence(word_count: 100),
+#     user_id: users.sample.id
+#   )
+# end
+
+2.times do
+  Comment.create!(
+    article_id: articles.sample.id,
+    content: Faker::Lorem.sentence(word_count: 10),
+    # user_id: users.sample.id
   )
 end
+
+
 
