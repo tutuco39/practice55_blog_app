@@ -31,13 +31,17 @@
 .article
   %h2= I18n.t('articles.comment_list')
   .comments-container
+    - @comments.each do |comment|
+      .article_comment
+        %p= comment.content
 
 .container
   .btn-secondary.show-comment-form
-    コメントを追加
-  .comment-text-area.hidden
-    = text_area_tag :comment_content, '', class: 'sm'
-    .btn-secondary.add-comment-button
-      コメントを投稿
+    = link_to new_api_comment_path(@article) do
+      コメントを追加
+    .comment-text-area.hidden
+      = text_area_tag :comment_content, '', class: 'sm'
+      .btn-secondary.add-comment-button
+        = 'コメントを投稿'
 
 = javascript_pack_tag 'article'
