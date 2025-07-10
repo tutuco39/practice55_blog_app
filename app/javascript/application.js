@@ -6,15 +6,6 @@ axios.defaults.headers.common['X-CSRF-Token'] = Rails.csrfToken()
 
 import "trix"
 import "@rails/actiontext"
-import ''
-
-
-require("@rails/ujs").start()
-require("@rails/activestorage").start()
-require("channels")
-
-require("trix")
-require("@rails/actiontext")
 
 import $ from 'jquery'
 import axios from 'modules/axios'
