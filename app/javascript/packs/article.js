@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   axios.get(`/api/articles/${articleId}/comments`)
     .then((response) => {
-      debugger
       const comments = response.data
       comments.forEach((comment) => {
         appendNewComment(comment)
