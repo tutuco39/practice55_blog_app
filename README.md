@@ -49,27 +49,23 @@ rails server
 <div style="display: flex; vertical-align: top;">
   <img src="./images/article.index.png" width="30%">
   <img src="./images/article.show.png" width="30%">
-</div>
-
-<div style="display: flex; vertical-align: top;">
+  <br>
   <img src="./images/timeline.png" width="30%">
   <img src="./images/like.article.png" width="30%">
 </div>
 
-
-### ログイン、サインアップ画面
+### ログイン画面
 
 <div style="display: flex; vertical-align: top;">
   <img src="./images/login.png" width="30%">
   <img src="./images/signup.png" width="30%">
 </div>
 
-### 記事作成画面
+### 投稿画面
 
 <div style="display: flex; vertical-align: top;">
   <img src="./images/add.comment.png" width="30%">
 </div>
-
 
 ### プロフィール画面
 
