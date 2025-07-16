@@ -43,7 +43,7 @@ articles = Article.all
 #   )
 # end
 
-18.times do
+30.times do
   Comment.create!(
     article_id: articles.sample.id,
     content: Faker::Lorem.sentence(word_count: 10),
