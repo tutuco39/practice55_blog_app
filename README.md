@@ -49,7 +49,9 @@ rails server
 <div style="display: flex; vertical-align: top;">
   <img src="./images/article.index.png" width="30%">
   <img src="./images/article.show.png" width="30%">
-  <br>
+</div>
+
+<div style="display: flex; vertical-align: top;">
   <img src="./images/timeline.png" width="30%">
   <img src="./images/like.article.png" width="30%">
 </div>
