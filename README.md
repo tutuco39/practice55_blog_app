@@ -45,46 +45,35 @@ rails server
 ## スクリーンショット
 
 ### メイン画面
-記事を閲覧する画面です。
 
-フォローしているユーザーの記事一覧が表示されます。
+<div style="display: flex; vertical-align: top;">
+  <img src="./images/article.index.png" width="30%">
+  <img src="./images/article.show.png" width="30%">
+</div>
 
-![タイムライン](./images/timeline.png)
-
-- 記事の全文を読めます。
-- 「いいね」が出来ます。
-- コメントを追加することが出来ます。
-
-
-![記事詳細](./images/show.png)
-
+<div style="display: flex; vertical-align: top;">
+  <img src="./images/timeline.png" width="30%">
+  <img src="./images/like.article.png" width="30%">
+</div>
 
 
 ### ログイン、サインアップ画面
 
-ユーザーがログイン、またはサインアップする画面です。
-
-未登録のユーザーは新規登録が出来ます。
-
-![ログイン](./images/login.png)
-
-![サインアップ](./images/signup.png)
+<div style="display: flex; vertical-align: top;">
+  <img src="./images/login.png" width="30%">
+  <img src="./images/signup.png" width="30%">
+</div>
 
 ### 記事作成画面
 
-新しい記事を投稿する画面です。
-
-- アイキャッチが追加出来ます。
-- 文字の装飾が出来ます。
-
-![記事作成](./images/new.png)
-
+<div style="display: flex; vertical-align: top;">
+  <img src="./images/add.comment.png" width="30%">
+</div>
 
 
 ### プロフィール画面
-ユーザーのプロフィールや投稿記事を見る画面です。
 
-プロフィールの編集やアイコンの変更ができます。
-
-![プロフィール](./images/profile.png)
-
+<div style="display: flex; vertical-align: top;">
+  <img src="./images/profile.png" width="30%">
+  <img src="./images/follow.png" width="30%">
+</div>
