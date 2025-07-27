@@ -28,6 +28,7 @@ const appendNewComment = (comment) => {
 
 document.addEventListener('DOMContentLoaded', () => {
 // document.addEventListener('turbo:load', () => {
+
   const dataset = $('#article-show').data()
   if (!dataset){ return false; }
   const articleId = dataset.articleId

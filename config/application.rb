@@ -13,6 +13,7 @@ module Practice55BlogApp
     if ['development', 'test'].include? ENV['RAILS_ENV']
       Dotenv::Railtie.load
     end
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
