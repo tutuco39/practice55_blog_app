@@ -9,6 +9,11 @@ Bundler.require(*Rails.groups)
 
 module Practice55BlogApp
   class Application < Rails::Application
+
+    if ['development', 'test'].include? ENV['RAILS_ENV']
+      Dotenv::Railtie.load
+    end
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
