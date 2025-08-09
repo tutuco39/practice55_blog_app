@@ -1,12 +1,5 @@
 # README
 
-## バグを修正中です。
-2025年7月、ruby・railsのアップデートに伴うバグを修正中。
-
-### バグの内容
-テキストエディターに入力できない
-commentの表示が正常じゃない（）
-
 ## タイトル
 シンプルなブログアプリです。
 ユーザー登録・ログイン後に、記事の作成、編集、削除ができます。
@@ -27,19 +20,6 @@ commentの表示が正常じゃない（）
 
 ## 開発背景
 このプロジェクトは初学者が学びながら進めているため、時間をかけてじっくり作っています。
-
-
-## セットアップ方法（ローカル環境）
-以下の手順でローカル環境にセットアップできます。
-
-```bash
-git clone https://github.com/tutuco39/practice55_blog_app.git
-cd practice55_blog_app
-bundle install
-rails db:create db:migrate
-rails server
-```
-ブラウザで http://localhost:3000 にアクセスして動作確認してください。
 
 
 ## スクリーンショット
