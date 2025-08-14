@@ -11,3 +11,4 @@ pin 'jquery' # @3.7.1
 pin 'axios', to: 'https://cdn.skypack.dev/axios@0.19.2'
 pin '@rails/ujs', to: '@rails--ujs.js' # @7.1.3
 pin "@hotwired/turbo-rails", to: "turbo.min.js"
+
